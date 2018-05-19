@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+    <script src="../js/jquery-2.1.4.main.js"></script>
+    <script src="../js/bootstrap.main.js"></script>
+    <meta charset="UTF-8">
+    <meta name="veiwport" content="Width=device-width; user-scalabe=1;"/>
+</head>
+
+<body>
+<div class="container">
+    <p class="text-danger">
+        <em>Hello World Example</em>  </p>
+</div>
+<pre class="pre-scrollable ">
+//Parent class or Superclass
+class Parentclass
+{
+	int num=100;
+}
+//Child class or subclass
+class Subclass extends Parentclass
+{
+    /* I am declaring the same variable
+     * num in child class too.
+     */
+    int num=110;
+    void printNumber(){
+ 	System.out.println(num);
+    }
+    public static void main(String args[]){
+       Subclass obj= new Subclass();
+       obj.printNumber();
+    }
+}
+Output:
+110
+</pre >
+
+</body>
+</html>

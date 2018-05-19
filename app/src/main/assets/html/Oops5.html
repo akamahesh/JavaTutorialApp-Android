@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+    <script src="../js/jquery-2.1.4.main.js"></script>
+    <script src="../js/bootstrap.main.js"></script>
+    <meta charset="UTF-8">
+    <meta name="veiwport" content="Width=device-width; user-scalabe=1;"/>
+</head>
+
+<body>
+<div class="container">
+    <p class="text-danger">
+        <em>Hello World Example</em>  </p>
+</div>
+<pre class="pre-scrollable ">
+package beginnersbook.com;
+public class SingleTonClass {
+   //Static Class Reference
+   private static SingleTonClass obj=null;
+   private SingleTonClass(){
+      /*Private Constructor will prevent
+       * the instantiation of this class directly*/
+   }
+   public static SingleTonClass objectCreationMethod(){
+	/*This logic will ensure that no more than
+	 * one object can be created at a time */
+	if(obj==null){
+	    obj= new SingleTonClass();
+	}
+        return obj;
+   }
+   public void display(){
+	System.out.println("Singleton class Example");
+   }
+   public static void main(String args[]){
+	//Object cannot be created directly due to private constructor
+        //This way it is forced to create object via our method where
+        //we have logic for only one object creation
+	SingleTonClass myobject= SingleTonClass.objectCreationMethod();
+	myobject.display();
+   }
+}
+Output:
+
+Singleton class Example
+</pre >
+
+</body>
+</html>

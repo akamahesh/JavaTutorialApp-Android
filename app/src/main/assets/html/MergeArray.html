@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+    <script src="../js/jquery-2.1.4.main.js"></script>
+    <script src="../js/bootstrap.main.js"></script>
+    <meta charset="UTF-8">
+    <meta name="veiwport" content="Width=device-width; user-scalabe=1;"/>
+</head>
+
+<body>
+<div class="container">
+    <p class="text-danger"> <em>Hello World Example</em>  </p>
+</div>
+<pre class="pre-scrollable ">
+	import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+public class Main {
+   public static void main(String args[]) {
+      String a[] = { "A", "E", "I" };
+      String b[] = { "O", "U" };
+      List list = new ArrayList(Arrays.asList(a));
+      list.addAll(Arrays.asList(b));
+      Object[] c = list.toArray();
+      System.out.println(Arrays.toString(c));
+   }
+}
+</pre >
+<pre class="pre-scrollable">
+     [A, E, I, O, U]
+</pre>
+
+</body>
+</html>

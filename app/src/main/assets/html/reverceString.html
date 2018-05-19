@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+    <script src="../js/jquery-2.1.4.main.js"></script>
+    <script src="../js/bootstrap.main.js"></script>
+    <meta charset="UTF-8">
+    <meta name="veiwport" content="Width=device-width; user-scalabe=1;"/>
+</head>
+
+<body>
+<div class="container">
+    <p class="text-danger"> <em>Hello World Example</em>  </p>
+</div>
+<pre class="pre-scrollable ">
+	/*
+ Java String Reverse example.
+ This example shows how to
+    reverse a given string
+*/
+
+public class StringReverseExample {
+
+  public static void main(String
+    args[]){
+    //declare orinial string
+    String strOriginal =
+    "Hello World";
+    System.out.println("Original
+    String : " + strOriginal);
+
+    /*
+    The easiest way to reverse a
+    given string is to use reverse()
+    method of java StringBuffer class.
+    reverse() method returns
+    the StringBuffer object so we need to
+    cast it back to String using
+    toString() method of StringBuffer
+    */
+
+    strOriginal = new
+    StringBuffer(strOriginal).
+    reverse().toString();
+
+    System.out.println("Reversed
+    String : " + strOriginal);
+  }
+
+}
+</pre >
+<pre class="pre-scrollable">
+/*
+Output of the program would be :
+Original String : Hello World
+Reversed String : dlroW olleH
+*/
+</pre>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+    <script src="../js/jquery-2.1.4.main.js"></script>
+    <script src="../js/bootstrap.main.js"></script>
+    <meta charset="UTF-8">
+    <meta name="veiwport" content="Width=device-width; user-scalabe=1;"/>
+</head>
+
+<body>
+<div class="container">
+    <p class="text-danger">
+        <em>Hello World Example</em>  </p>
+</div>
+<pre class="pre-scrollable ">
+class StaticDemo
+{
+   public static void copyArg(String str1,
+    String str2)
+   {
+       //copies argument 2 to arg1
+       str2 = str1;
+       System.out.println("First String arg is:
+    "+str1);
+       System.out.println("Second String arg is:
+    "+str2);
+   }
+   public static void main(String agrs[])
+   {
+      //StaticDemo.copyArg("XYZ", "ABC");
+      copyArg("XYZ", "ABC");
+   }
+}
+Output:
+
+First String arg is: XYZ
+Second String arg is: XYZ
+</pre >
+
+</body>
+</html>

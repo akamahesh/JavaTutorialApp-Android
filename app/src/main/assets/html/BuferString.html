@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+    <script src="../js/jquery-2.1.4.main.js"></script>
+    <script src="../js/bootstrap.main.js"></script>
+    <meta charset="UTF-8">
+    <meta name="veiwport" content="Width=device-width; user-scalabe=1;"/>
+</head>
+
+<body>
+<div class="container">
+    <p class="text-danger"> <em>Hello World Example</em>  </p>
+</div>
+<pre class="pre-scrollable ">
+	public class StringBuffer{
+   public static void main(String[]
+    args) {
+      countTo_N_Improved();
+   }
+   private final static int
+    MAX_LENGTH=30;
+   private static String buffer = "";
+   private static void emit(String
+    nextChunk) {
+      if(buffer.length()
+    + nextChunk.length() > MAX_LENGTH) {
+         System.out.println(buffer);
+         buffer = "";
+      }
+      buffer += nextChunk;
+   }
+   private static
+    final int N=100;
+   private static void
+    countTo_N_Improved() {
+      for (int count=2;
+    count7lt;=N; count=count+2) {
+         emit(" " + count);
+      }
+   }
+}
+</pre >
+<pre class="pre-scrollable">
+Example Output
+    2 4 6 8 10 12 14 16 18 20 22
+    24 26 28 30 32 34 36 38 40 42
+    44 46 48 50 52 54 56 58 60 62
+    64 66 68 70 72 74 76 78 80 82
+</pre>
+
+</body>
+</html>

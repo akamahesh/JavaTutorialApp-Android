@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+    <script src="../js/jquery-2.1.4.main.js"></script>
+    <script src="../js/bootstrap.main.js"></script>
+    <meta charset="UTF-8">
+    <meta name="veiwport" content="Width=device-width; user-scalabe=1;"/>
+</head>
+
+<body>
+<div class="container">
+    <p class="text-danger">
+        <em>Hello World Example</em>  </p>
+</div>
+<pre class="pre-scrollable ">
+class Example1{
+   public void display1(){
+      System.out.println("display1 method");
+   }
+}
+abstract class Example2{
+   public void display2(){
+      System.out.println("display2 method");
+   }
+}
+abstract class Example3 extends Example1{
+   abstract void display3();
+}
+class Example4 extends Example2{
+   public void display3(){
+      System.out.println("display3 method");
+   }
+}
+class Demo{
+   public static void main(String args[]){
+       Example4 obj=new Example4();
+       obj.display3();
+   }
+}
+Output:
+
+display3 method
+</pre >
+
+</body>
+</html>

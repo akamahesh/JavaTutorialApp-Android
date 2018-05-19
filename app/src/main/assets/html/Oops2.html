@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+    <script src="../js/jquery-2.1.4.main.js"></script>
+    <script src="../js/bootstrap.main.js"></script>
+    <meta charset="UTF-8">
+    <meta name="veiwport" content="Width=device-width; user-scalabe=1;"/>
+</head>
+
+<body>
+<div class="container">
+    <p class="text-danger"> <em>Hello World Example</em>  </p>
+</div>
+<pre class="pre-scrollable ">
+class Human{
+   public void eat()
+   {
+      System.out.println("Human is eating");
+   }
+}
+class Boy extends Human{
+   public void eat(){
+      System.out.println("Boy is eating");
+   }
+   public static void main( String args[]) {
+      Boy obj = new Boy();
+      obj.eat();
+   }
+}
+</pre >
+<pre class="pre-scrollable">
+OUTPUT:
+  Boy is eating
+
+
+
+</pre>
+
+</body>
+</html>

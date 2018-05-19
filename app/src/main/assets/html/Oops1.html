@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+    <script src="../js/jquery-2.1.4.main.js"></script>
+    <script src="../js/bootstrap.main.js"></script>
+    <meta charset="UTF-8">
+    <meta name="veiwport" content="Width=device-width; user-scalabe=1;"/>
+</head>
+
+<body>
+<div class="container">
+    <p class="text-danger"> <em>Hello World Example</em>  </p>
+</div>
+<pre class="pre-scrollable ">
+class DisplayOverloading
+{
+    public void disp(char c)
+    {
+         System.out.println(c);
+    }
+    public void disp(char c, int num)
+    {
+         System.out.println(c + " "+num);
+    }
+}
+class Sample
+{
+   public static void main(String args[])
+   {
+       DisplayOverloading obj = new DisplayOverloading();
+       obj.disp('a');
+       obj.disp('a',10);
+   }
+}
+
+</pre >
+<pre class="pre-scrollable">
+OUTPUT:
+   a
+   a 10
+Entered number is odd
+
+
+</pre>
+
+</body>
+</html>

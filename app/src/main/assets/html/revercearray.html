@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+    <script src="../js/jquery-2.1.4.main.js"></script>
+    <script src="../js/bootstrap.main.js"></script>
+    <meta charset="UTF-8">
+    <meta name="veiwport" content="Width=device-width; user-scalabe=1;"/>
+</head>
+
+<body>
+<div class="container">
+    <p class="text-danger"> <em>Hello World Example</em>  </p>
+</div>
+<pre class="pre-scrollable ">
+	import java.util.ArrayList;
+import java.util.Collections;
+
+public class Main {
+   public static void main(String[] args) {
+      ArrayList arrayList = new ArrayList();
+      arrayList.add("A");
+      arrayList.add("B");
+      arrayList.add("C");
+      arrayList.add("D");
+      arrayList.add("E");
+      System.out.println("Before Reverse Order: " + arrayList);
+      Collections.reverse(arrayList);
+      System.out.println("After Reverse Order: " + arrayList);
+   }
+}
+</pre >
+<pre class="pre-scrollable">
+      Before Reverse Order: [A, B, C, D, E]
+      After Reverse Order: [E, D, C, B, A]
+</pre>
+
+</body>
+</html>

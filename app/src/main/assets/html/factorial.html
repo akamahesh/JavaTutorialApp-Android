@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+    <script src="../js/jquery-2.1.4.main.js"></script>
+    <script src="../js/bootstrap.main.js"></script>
+    <meta charset="UTF-8">
+    <meta name="veiwport" content="Width=device-width; user-scalabe=1;"/>
+</head>
+
+<body>
+<div class="container">
+    <p class="text-danger"> <em>Hello World Example</em>  </p>
+</div>
+<pre class="pre-scrollable ">
+import java.util.Scanner;
+
+public class Factorial {
+
+   public static void main(String[] args) {
+       Scanner scanner = new Scanner(System.in);
+       System.out.print("Enter the number whose factorial is to be found: ");
+       int n = scanner.nextInt();
+       int result = factorial(n);
+       System.out.println("The factorial of " + n + " is " + result);
+   }
+
+   public static int factorial(int n) {
+       int result = 1;
+       for (int i = 1; i <= n; i++) {
+           result = result * i;
+       }
+       return result;
+   }
+}
+
+</pre >
+<pre class="pre-scrollable">
+    Enter the number whose factorial is to be found: 7
+The factorial of 7 is 5040
+
+</pre>
+
+</body>
+</html>

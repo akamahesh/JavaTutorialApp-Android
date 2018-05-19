@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+    <script src="../js/jquery-2.1.4.main.js"></script>
+    <script src="../js/bootstrap.main.js"></script>
+    <meta charset="UTF-8">
+    <meta name="veiwport" content="Width=device-width; user-scalabe=1;"/>
+</head>
+
+<body>
+<div class="container">
+    <p class="text-danger"> <em>Hello World Example</em>  </p>
+</div>
+<pre class="pre-scrollable ">
+package com.java2novice.algos;
+
+public class MySelectionSort {
+
+    public static int[] doSelectionSort(int[] arr){
+
+        for (int i = 0; i < arr.length - 1; i++)
+        {
+            int index = i;
+            for (int j = i + 1; j < arr.length; j++)
+                if (arr[j] < arr[index])
+                    index = j;
+
+            int smallerNumber = arr[index];
+            arr[index] = arr[i];
+            arr[i] = smallerNumber;
+        }
+        return arr;
+    }
+
+    public static void main(String a[]){
+
+        int[] arr1 = {10,34,2,56,7,67,88,42};
+        int[] arr2 = doSelectionSort(arr1);
+        for(int i:arr2){
+            System.out.print(i);
+            System.out.print(", ");
+        }
+    }
+}
+</pre >
+<pre class="pre-scrollable">
+Output:
+2, 7, 10, 34, 42, 56, 67, 88,
+</pre>
+
+</body>
+</html>

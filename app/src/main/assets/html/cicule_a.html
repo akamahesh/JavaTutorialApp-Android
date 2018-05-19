@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+    <script src="../js/jquery-2.1.4.main.js"></script>
+    <script src="../js/bootstrap.main.js"></script>
+    <meta charset="UTF-8">
+    <meta name="veiwport" content="Width=device-width; user-scalabe=1;"/>
+</head>
+
+<body>
+<div class="container">
+    <p class="text-danger"> <em>Hello World Example</em>  </p>
+</div>
+<pre class="pre-scrollable ">
+import java.util.Scanner;
+public class Area
+{
+    public static void main(String[] args)
+    {
+        int r;
+        double pi = 3.14, area;
+        Scanner s = new Scanner(System.in);
+        System.out.print("Enter radius of circle:");
+        r = s.nextInt();
+        area = pi * r * r;
+        System.out.println("Area of circle:"+area);
+    }
+}
+
+
+
+</pre >
+<pre class="pre-scrollable">
+    OUTPUT:
+    javac Area.java
+     java Area
+
+Enter radius of circle:5
+Area of circle:78.5
+</pre>
+
+</body>
+</html>

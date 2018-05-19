@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+    <script src="../js/jquery-2.1.4.main.js"></script>
+    <script src="../js/bootstrap.main.js"></script>
+    <meta charset="UTF-8">
+    <meta name="veiwport" content="Width=device-width; user-scalabe=1;"/>
+</head>
+
+<body>
+<div class="container">
+    <p class="text-danger"> <em>Hello World Example</em>  </p>
+</div>
+<pre class="pre-scrollable ">
+import java.io.*;
+class Building {
+   void color()
+   {
+      System.out.println("Blue");
+   }
+}
+class Room extends Building{
+   void color() throws IOException
+   {
+      System.out.println("White");
+   }
+   public static void main(String args[]){
+      Building obj = new Room();
+      try{
+         obj.color();
+      }catch(Exception e){
+         System.out.println(e);
+       }
+   }
+}
+</pre >
+<pre class="pre-scrollable">
+Exception in thread "main" java.lang.Error:
+    Unresolved compilation problem:
+	Exception IOException is not
+    compatible with throws clause in Building.color()
+
+</pre>
+
+</body>
+</html>

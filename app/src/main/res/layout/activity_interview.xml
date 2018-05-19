@@ -1,0 +1,1120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <include layout="@layout/layout_toolbar"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/layouttext1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="What do you know about Java?"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:id="@+id/layout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:text="Java is a high-level programming language originally developed by Sun Microsystems and released in 1995. Java runs on a variety of platforms, such as Windows, Mac OS, and the various versions of UNIX." />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/layouttext2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:textColor="#000000"
+                android:text="What are the supported platforms by Java Programming Language?"
+
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:id="@+id/layout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:text="Java runs on a variety of platforms, such as Windows, Mac OS, and the various versions of UNIX/Linux like HP-Unix, Sun Solaris, Redhat Linux, Ubuntu, CentOS, etc." />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/layouttext3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="List any five features of Java?"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:paddingTop="20dp"
+                />
+
+            <LinearLayout
+                android:id="@+id/layout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:text="Some features include Object Oriented, Platform Independent, Robust, Interpreted, Multi-threaded" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/layouttext4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Why is Java Architectural Neutral?"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:paddingTop="20dp"
+                />
+
+            <LinearLayout
+                android:id="@+id/layout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:text="It’s compiler generates an architecture-neutral object file format, which makes the compiled code to be executable on many processors, with the presence of Java runtime system." />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/layouttext5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="How Java enabled High Performance?"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:paddingTop="20dp"
+                />
+
+            <LinearLayout
+                android:id="@+id/layout5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:text="Java uses Just-In-Time compiler to enable high performance. Just-In-Time compiler is a program that turns Java bytecode, which is a program that contains instructions that must be interpreted into instructions that can be sent directly to the processor." />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/layouttext6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="Why Java is considered dynamic?"
+
+                android:paddingTop="20dp"
+                android:textSize="20sp"  />
+
+            <LinearLayout
+                android:id="@+id/layout6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:text="It is designed to adapt to an evolving environment. Java programs can carry extensive amount of run-time information that can be used to verify and resolve accesses to objects on run-time." />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/layouttext7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:paddingTop="20dp"
+
+                android:text="What is Java Virtual Machine and how it is considered in context of Java’s platform independent feature?" />
+
+            <LinearLayout
+                android:id="@+id/layout7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/test7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:text="When Java is compiled, it is not compiled into platform specific machine, rather into platform independent byte code. This byte code is distributed over the web and interpreted by virtual Machine (JVM) on whichever platform it is being run." />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/layouttext8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:paddingTop="20dp"
+                android:textColor="#000000"
+                android:text="List two Java IDE’s?" />
+
+            <LinearLayout
+                android:id="@+id/layout8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:text="Netbeans, Eclipse, etc." />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/layouttext9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:paddingTop="20dp"
+                android:textColor="#000000"
+                android:text="List some Java keywords(unlike C, C++ keywords)?" />
+
+            <LinearLayout
+                android:id="@+id/layout9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:text="Some Java keywords are import, super, finally, etc." />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/layouttext10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:paddingTop="20dp"
+                android:textColor="#000000"
+                android:text="What do you mean by Object?" />
+
+            <LinearLayout
+                android:id="@+id/layout10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:text="Object is a runtime entity and it’s state is stored in fields and behavior is shown via methods. Methods operate on an object's internal state and serve as the primary mechanism for object-to-object communication." />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/layouttext11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:paddingTop="20dp"
+                android:textColor="#000000"
+                android:text="Define class?" />
+
+            <LinearLayout
+                android:id="@+id/layout11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:text="A class is a blue print from which individual objects are created. A class can contain fields and methods to describe the behavior of an object." />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/layouttext12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:paddingTop="20dp"
+                android:textColor="#000000"
+                android:text="What kind of variables a class can consist of?" />
+
+            <LinearLayout
+                android:id="@+id/layout12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:text="A class consist of Local variable, instance variables and class variables" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/layouttext13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:paddingTop="20dp"
+                android:textColor="#000000"
+                android:text="What is a Local Variable?" />
+
+            <LinearLayout
+                android:id="@+id/layout13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:text="Variables defined inside methods, constructors or blocks are called local variables. The variable will be declared and initialized within the method and it will be destroyed when the method has completed." />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/layouttext14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:paddingTop="20dp"
+                android:textColor="#000000"
+                android:text="What do you mean by Constructor?" />
+
+            <LinearLayout
+                android:id="@+id/layout14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:text="Constructor gets invoked when a new object is created. Every class has a constructor. If we do not explicitly write a constructor for a class the java compiler builds a default constructor for that class." />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/layouttext15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:paddingTop="20dp"
+                android:textColor="#000000"
+                android:text="List the three steps for creating an Object for a class?" />
+
+            <LinearLayout
+                android:id="@+id/layout15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:text="An Object is first declared, then instantiated and then it is initialized." />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/layouttext16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:paddingTop="20dp"
+                android:textColor="#000000"
+                android:text="What is the default value of float and double datatype in Java?" />
+
+            <LinearLayout
+                android:id="@+id/layout16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:text="Default value of float and double datatype in different as compared to C/C++. For float its 0.0f and for double it’s 0.0d" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/layouttext17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:paddingTop="20dp"
+                android:textColor="#000000"
+                android:text="According to Java Operator precedence, which operator is considered to be with highest precedence?" />
+
+            <LinearLayout
+                android:id="@+id/layout17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:text="Postfix operators i.e () [] . is at the highest precedence." />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/layouttext18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:paddingTop="20dp"
+                android:textColor="#000000"
+                android:text="When parseInt() method can be used?" />
+
+            <LinearLayout
+                android:id="@+id/layout18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:text="This method is used to get the primitive data type of a certain String." />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/layouttext19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:paddingTop="20dp"
+                android:textColor="#000000"
+                android:text="Why is String class considered immutable?" />
+
+            <LinearLayout
+                android:id="@+id/layout19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:text="The String class is immutable, so that once it is created a String object cannot be changed. Since String is immutable it can safely be shared between many threads ,which is considered very important for multithreaded programming." />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/layouttext20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:paddingTop="20dp"
+                android:textColor="#000000"
+                android:text="Why is StringBuffer called mutable?" />
+
+            <LinearLayout
+                android:id="@+id/layout20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:text="The String class is considered as immutable, so that once it is created a String object cannot be changed. If there is a necessity to make alot of modifications to Strings of characters then StringBuffer should be used." />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/layouttext21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:paddingTop="20dp"
+                android:textColor="#000000"
+                android:text="What is the difference between StringBuffer and StringBuilder class?" />
+
+            <LinearLayout
+                android:id="@+id/layout21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:text="Use StringBuilder whenever possible because it is faster than StringBuffer. But, if thread safety is necessary then use StringBuffer objects." />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/layouttext22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:paddingTop="20dp"
+                android:textColor="#000000"
+                android:text="Which package is used for pattern matching with regular expressions?" />
+
+            <LinearLayout
+                android:id="@+id/layout22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:text="java.util.regex package is used for this purpose." />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/layouttext23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:paddingTop="20dp"
+                android:textColor="#000000"
+                android:text="java.util.regex consists of which classes?" />
+
+            <LinearLayout
+                android:id="@+id/layout23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:text="java.util.regex consists of three classes − Pattern class, Matcher class and PatternSyntaxException class." />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/layouttext24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:paddingTop="20dp"
+                android:textColor="#000000"
+                android:text="What is an Exception?" />
+
+            <LinearLayout
+                android:id="@+id/layout24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:text="An exception is a problem that arises during the execution of a program. Exceptions are caught by handlers positioned along the thread's method invocation stack." />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/layouttext25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:paddingTop="20dp"
+                android:textColor="#000000"
+                android:text="What do you mean by Checked Exceptions?" />
+
+            <LinearLayout
+                android:id="@+id/layout25"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:text="It is an exception that is typically a user error or a problem that cannot be foreseen by the programmer. For example, if a file is to be opened, but the file cannot be found, an exception occurs. These exceptions cannot simply be ignored at the time of compilation." />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/layouttext26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:paddingTop="20dp"
+                android:textColor="#000000"
+                android:text="Explain Runtime Exceptions?" />
+
+            <LinearLayout
+                android:id="@+id/layout26"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:text="It is an exception that occurs that probably could have been avoided by the programmer. As opposed to checked exceptions, runtime exceptions are ignored at the time of compliation." />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/layouttext27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:paddingTop="20dp"
+                android:textColor="#000000"
+                android:text="When throws keyword is used?" />
+
+            <LinearLayout
+                android:id="@+id/layout27"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView27"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:text="If a method does not handle a checked exception, the method must declare it using the throwskeyword. The throws keyword appears at the end of a method's signature." />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/layouttext28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:paddingTop="20dp"
+                android:textColor="#000000"
+                android:text="When throw keyword is used?" />
+
+            <LinearLayout
+                android:id="@+id/layout28"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:text="An exception can be thrown, either a newly instantiated one or an exception that you just caught, by using throw keyword." />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/layouttext29"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:paddingTop="20dp"
+                android:textColor="#000000"
+                android:text="How finally used under Exception Handling?" />
+
+            <LinearLayout
+                android:id="@+id/layout29"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView29"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:text="The finally keyword is used to create a block of code that follows a try block. A finally block of code always executes, whether or not an exception has occurred." />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/layouttext30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:paddingTop="20dp"
+                android:textColor="#000000"
+                android:text="Define Inheritance?" />
+
+            <LinearLayout
+                android:id="@+id/layout30"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:text="It is the process where one object acquires the properties of another. With the use of inheritance the information is made manageable in a hierarchical order." />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/layouttext31"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:paddingTop="20dp"
+                android:textColor="#000000"
+                android:text="When super keyword is used?" />
+
+            <LinearLayout
+                android:id="@+id/layout31"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView31"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:text="If the method overrides one of its superclass's methods, overridden method can be invoked through the use of the keyword super. It can be also used to refer to a hidden field." />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/layouttext32"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:paddingTop="20dp"
+                android:textColor="#000000"
+                android:text="What is Polymorphism?" />
+
+            <LinearLayout
+                android:id="@+id/layout32"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView32"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:text="Polymorphism is the ability of an object to take on many forms. The most common use of polymorphism in OOP occurs when a parent class reference is used to refer to a child class object." />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/layouttext33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:paddingTop="20dp"
+                android:textColor="#000000"
+                android:text="What is Abstraction?" />
+
+            <LinearLayout
+                android:id="@+id/layout33"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView33"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:text="It refers to the ability to make a class abstract in OOP. It helps to reduce the complexity and also improves the maintainability of the system." />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/layouttext34"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:paddingTop="20dp"
+                android:textColor="#000000"
+                android:text="What is Abstract class?" />
+
+            <LinearLayout
+                android:id="@+id/layout34"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView34"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:text="These classes cannot be instantiated and are either partially implemented or not at all implemented. This class contains one or more abstract methods which are simply method declarations without a body." />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/layouttext35"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:paddingTop="20dp"
+                android:textColor="#000000"
+                android:text="Why Packages are used?" />
+
+            <LinearLayout
+                android:id="@+id/layout35"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView35"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:text="Packages are used in Java in-order to prevent naming conflicts, to control access, to make searching/locating and usage of classes, interfaces, enumerations and annotations, etc., easier." />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/layouttext36"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:paddingTop="20dp"
+                android:textColor="#000000"
+                android:text="What do you mean by Multithreaded program?" />
+
+            <LinearLayout
+                android:id="@+id/layout36"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView36"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:text="A multithreaded program contains two or more parts that can run concurrently. Each part of such a program is called a thread, and each thread defines a separate path of execution." />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/layouttext37"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:paddingTop="20dp"
+                android:textColor="#000000"
+                android:text="Define JRE i.e. Java Runtime Environment?" />
+
+            <LinearLayout
+                android:id="@+id/layout37"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView37"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:text="Java Runtime Environment is an implementation of the Java Virtual Machine which executes Java programs. It provides the minimum requirements for executing a Java application;" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/layouttext38"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:paddingTop="20dp"
+                android:textColor="#000000"
+                android:text="What is JAR file?" />
+
+            <LinearLayout
+                android:id="@+id/layout38"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView38"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:text="JAR files is Java Archive fles and it aggregates many files into one. It holds Java classes in a library. JAR files are built on ZIP file format and have .jar file extension." />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/layouttext39"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:paddingTop="20dp"
+                android:textColor="#000000"
+                android:text="What is a WAR file?" />
+
+            <LinearLayout
+                android:id="@+id/layout39"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView39"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:text="This is Web Archive File and used to store XML, java classes, and JavaServer pages. which is used to distribute a collection of JavaServer Pages, Java Servlets, Java classes, XML files, static Web pages etc." />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/layouttext40"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:paddingTop="20dp"
+                android:textColor="#000000"
+                android:text="What is final class?" />
+
+            <LinearLayout
+                android:id="@+id/layout40"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView40"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:text="Final classes are created so the methods implemented by that class cannot be overridden. It can’t be inherited." />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/layouttext41"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:paddingTop="20dp"
+                android:textColor="#000000"
+                android:text="What is NullPointerException?" />
+
+            <LinearLayout
+                android:id="@+id/layout41"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView41"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:text="A NullPointerException is thrown when calling the instance method of a null object, accessing or modifying the field of a null object etc." />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/layouttext42"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:paddingTop="20dp"
+                android:textColor="#000000"
+                android:text="What is the difference between static and non-static variables?" />
+
+            <LinearLayout
+                android:id="@+id/layout42"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView42"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:text="A static variable is associated with the class as a whole rather than with specific instances of a class. Non-static variables take on unique values with each object instance." />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/layouttext43"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:paddingTop="20dp"
+                android:textColor="#000000"
+                android:text="What's the difference between constructors and other methods?" />
+
+            <LinearLayout
+                android:id="@+id/layout43"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView43"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:text="Constructors must have the same name as the class and can not return a value. They are only called once while regular methods could be called many times." />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/layouttext44"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:paddingTop="20dp"
+                android:textColor="#000000"
+                android:text="What is the difference between a break statement and a continue statement?" />
+
+            <LinearLayout
+                android:id="@+id/layout44"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView44"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:text="A break statement results in the termination of the statement to which it applies (switch, for, do, or while). A continue statement is used to end the current loop iteration and return control to the loop statement." />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/layouttext45"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:paddingTop="20dp"
+                android:textColor="#000000"
+                android:text="What is the purpose of the System class?" />
+
+            <LinearLayout
+                android:id="@+id/layout45"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView45"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:text="The purpose of the System class is to provide access to system resources." />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

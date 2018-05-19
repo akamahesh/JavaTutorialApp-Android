@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+    <script src="../js/jquery-2.1.4.main.js"></script>
+    <script src="../js/bootstrap.main.js"></script>
+    <meta charset="UTF-8">
+    <meta name="veiwport" content="Width=device-width; user-scalabe=1;"/>
+</head>
+
+<body>
+<div class="container">
+    <p class="text-danger"> <em>Hello World Example</em>  </p>
+</div>
+<pre class="pre-scrollable ">
+import java.util.Scanner;
+
+class CheckEvenOdd
+{
+  public static void main(String args[])
+  {
+    int num;
+    System.out.println("Enter an Integer number:");
+
+    //The input provided by user is stored in num
+    Scanner input = new Scanner(System.in);
+    num = input.nextInt();
+
+    /* If number is divisible by 2 then it's an even number
+     * else odd number*/
+    if ( num % 2 == 0 )
+        System.out.println("Entered number is even");
+     else
+        System.out.println("Entered number is odd");
+  }
+}
+
+
+</pre >
+<pre class="pre-scrollable">
+
+    /*
+Enter an Integer number:
+78
+Entered number is even
+    Enter an Integer number:
+77
+Entered number is odd
+
+
+</pre>
+
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+    <script src="../js/jquery-2.1.4.main.js"></script>
+    <script src="../js/bootstrap.main.js"></script>
+    <meta charset="UTF-8">
+    <meta name="veiwport" content="Width=device-width; user-scalabe=1;"/>
+</head>
+
+<body>
+<div class="container">
+    <p class="text-danger">
+        <em>Hello World Example</em>  </p>
+</div>
+<pre class="pre-scrollable ">
+package pkg;
+
+public class LoadTest {
+    public static void main(String[] args) {
+        System.out.println("START");
+        new Child();
+        System.out.println("END");
+    }
+}
+
+class Parent extends Grandparent {
+    // Instance init block
+    {
+        System.out.println("instance - parent");
+    }
+
+    // Constructor
+    public Parent() {
+        System.out.println("constructor - parent");
+    }
+
+    // Static init block
+    static {
+        System.out.println("static - parent");
+    }
+}
+
+class Grandparent {
+    // Static init block
+    static {
+        System.out.println("static - grandparent");
+    }
+
+    // Instance init block
+    {
+        System.out.println("instance - grandparent");
+    }
+
+    // Constructor
+    public Grandparent() {
+        System.out.println("constructor - grandparent");
+    }
+}
+
+class Child extends Parent {
+    // Constructor
+    public Child() {
+        System.out.println("constructor - child");
+    }
+
+    // Static init block
+    static {
+        System.out.println("static - child");
+    }
+
+    // Instance init block
+    {
+        System.out.println("instance - child");
+    }
+}
+and got this output:
+
+START
+static - grandparent
+static - parent
+static - child
+instance - grandparent
+constructor - grandparent
+instance - parent
+constructor - parent
+instance - child
+constructor - child
+END
+</pre >
+
+</body>
+</html>

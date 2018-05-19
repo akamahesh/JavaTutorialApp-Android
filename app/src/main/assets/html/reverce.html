@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+    <script src="../js/jquery-2.1.4.main.js"></script>
+    <script src="../js/bootstrap.main.js"></script>
+    <meta charset="UTF-8">
+    <meta name="veiwport" content="Width=device-width; user-scalabe=1;"/>
+</head>
+
+<body>
+<div class="container">
+    <p class="text-danger"> <em>Hello World Example</em>  </p>
+</div>
+<pre class="pre-scrollable ">
+/*
+  Reverse Number using Java
+  This Java Reverse Number Example shows how to reverse a given number.
+*/
+
+public class ReverseNumber {
+
+        public static void main(String[] args) {
+
+                //original number
+                int number = 1234;
+                int reversedNumber = 0;
+                int temp = 0;
+
+                while(number > 0){
+
+                        //use modulus operator to strip off the last digit
+                        temp = number%10;
+
+                        //create the reversed number
+                        reversedNumber = reversedNumber * 10 + temp;
+                        number = number/10;
+
+                }
+
+                //output the reversed number
+                System.out.println("Reversed Number is: " + reversedNumber);
+        }
+}
+
+
+
+</pre >
+<pre class="pre-scrollable">
+
+  /*
+Output of this Number Reverse program would be
+Reversed Number is: 4321
+*/
+
+</pre>
+
+</body>
+</html>

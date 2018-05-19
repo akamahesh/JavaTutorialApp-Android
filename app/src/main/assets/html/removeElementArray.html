@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+    <script src="../js/jquery-2.1.4.main.js"></script>
+    <script src="../js/bootstrap.main.js"></script>
+    <meta charset="UTF-8">
+    <meta name="veiwport" content="Width=device-width; user-scalabe=1;"/>
+</head>
+
+<body>
+<div class="container">
+    <p class="text-danger"> <em>Hello World Example</em>  </p>
+</div>
+<pre class="pre-scrollable ">
+	import java.util.ArrayList;
+
+public class Main {
+   public static void main(String[]
+    args)  {
+      ArrayList objArray =
+    new ArrayList();
+      objArray.clear();
+      objArray.add(0,"0th element");
+      objArray.add(1,"1st element");
+      objArray.add(2,"2nd element");
+      System.out.println("Array before
+    removing an element"+objArray);
+      objArray.remove(1);
+      objArray.remove("0th element");
+      System.out.println("Array after
+    removing an element"+objArray);
+   }
+}
+</pre >
+<pre class="pre-scrollable">
+    Array before removing an
+    element[0th element, 1st element,
+    2nd element]
+    Array after removing
+    an element[2nd element]
+</pre>
+
+</body>
+</html>

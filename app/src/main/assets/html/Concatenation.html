@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+    <script src="../js/jquery-2.1.4.main.js"></script>
+    <script src="../js/bootstrap.main.js"></script>
+    <meta charset="UTF-8">
+    <meta name="veiwport" content="Width=device-width; user-scalabe=1;"/>
+</head>
+
+<body>
+<div class="container">
+    <p class="text-danger"> <em>Hello World Example</em>  </p>
+</div>
+<pre class="pre-scrollable ">
+	package com.myjava.string;
+
+public class MyStringConcat {
+    public static void main(String
+    a[]){
+        String b = "jump ";
+        String c = "No jump";
+        /**
+         *  We can do string
+    concatination by two ways.
+         *  One is by using '+'
+    operator, shown below.
+         */
+        String d = b+c;
+        System.out.println(d);
+        /**
+         *  Another way is by
+    using concat() method,
+         *  which appends the
+    specified string at the end.
+         */
+        d = b.concat(c);
+        System.out.println(d);
+    }
+}
+
+</pre >
+<pre class="pre-scrollable">
+Example Output
+    jump No jump
+    jump No jump
+</pre>
+
+</body>
+</html>

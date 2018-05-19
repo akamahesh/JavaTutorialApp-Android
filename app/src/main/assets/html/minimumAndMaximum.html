@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+    <script src="../js/jquery-2.1.4.main.js"></script>
+    <script src="../js/bootstrap.main.js"></script>
+    <meta charset="UTF-8">
+    <meta name="veiwport" content="Width=device-width; user-scalabe=1;"/>
+</head>
+
+<body>
+<div class="container">
+    <p class="text-danger"> <em>Hello World Example</em>  </p>
+</div>
+<pre class="pre-scrollable ">
+	import java.util.Arrays;
+import java.util.Collections;
+
+public class Main {
+   public static void main(String[] args) {
+      Integer[] numbers = { 8, 2, 7, 1, 4, 9, 5};
+      int min = (int) Collections.min(Arrays.asList(numbers));
+      int max = (int) Collections.max(Arrays.asList(numbers));
+      System.out.println("Min number: " + min);
+      System.out.println("Max number: " + max);
+   }
+}
+</pre >
+<pre class="pre-scrollable">
+     Min number: 1
+     Max number: 9
+</pre>
+
+</body>
+</html>

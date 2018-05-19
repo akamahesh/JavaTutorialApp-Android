@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+    <script src="../js/jquery-2.1.4.main.js"></script>
+    <script src="../js/bootstrap.main.js"></script>
+    <meta charset="UTF-8">
+    <meta name="veiwport" content="Width=device-width; user-scalabe=1;"/>
+</head>
+
+<body>
+<div class="container">
+    <p class="text-danger">
+        <em>Hello World Example</em>  </p>
+</div>
+<pre class="pre-scrollable ">
+package beginnersbook.com;
+public class StudentData
+{
+   private int stuID;
+   private String stuName;
+   private int stuAge;
+   StudentData()
+   {
+       //Default constructor
+       stuID = 100;
+       stuName = "New Student";
+       stuAge = 18;
+   }
+   StudentData(int num1, String str, int num2)
+   {
+       //Parameterized constructor
+       stuID = num1;
+       stuName = str;
+       stuAge = num2;
+   }
+   //Getter and setter methods
+   public int getStuID() {
+       return stuID;
+   }
+   public void setStuID(int stuID) {
+       this.stuID = stuID;
+   }
+   public String getStuName() {
+       return stuName;
+   }
+   public void setStuName(String stuName) {
+       this.stuName = stuName;
+   }
+   public int getStuAge() {
+       return stuAge;
+   }
+   public void setStuAge(int stuAge) {
+       this.stuAge = stuAge;
+   }
+}
+
+class TestOverloading
+{
+   public static void main(String args[])
+   {
+       //This object creation would call the default constructor
+       StudentData myobj = new StudentData();
+       System.out.println("Student Name is:
+    "+myobj.getStuName());
+       System.out.println("Student Age is:
+    "+myobj.getStuAge());
+       System.out.println("Student ID is:
+    "+myobj.getStuID());
+
+       /*This object creation would call the parameterized
+        * constructor StudentData(int, String, int)*/
+       StudentData myobj2 =
+    new StudentData(555, "Chaitanya", 25);
+       System.out.println("Student Name is:
+    "+myobj2.getStuName());
+       System.out.println("Student Age is:
+    "+myobj2.getStuAge());
+       System.out.println("Student ID is:
+    "+myobj2.getStuID());
+  }
+}
+Output:
+
+Student Name is: New Student
+Student Age is: 18
+Student ID is: 100
+Student Name is: Chaitanya
+Student Age is: 25
+Student ID is: 555
+</pre >
+
+</body>
+</html>

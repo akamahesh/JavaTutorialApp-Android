@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+    <script src="../js/jquery-2.1.4.main.js"></script>
+    <script src="../js/bootstrap.main.js"></script>
+    <meta charset="UTF-8">
+    <meta name="veiwport" content="Width=device-width; user-scalabe=1;"/>
+</head>
+
+<body>
+<div class="container">
+    <p class="text-danger"> <em>Hello World Example</em>  </p>
+</div>
+<pre class="pre-scrollable ">
+class Example1
+{
+   public static void main(String args[])
+   {
+	int x = 10;
+	int y = 10;
+	try{
+	   int num= x/y;
+	   System.out.println("next-statement: Inside try block");
+	}
+        catch(Exception ex)
+	{
+	   System.out.println("Exception");
+	}
+	System.out.println("next-statement: Outside of try-catch");
+   }
+}
+
+</pre >
+<pre class="pre-scrollable">
+OUTPUT:
+next-statement: Inside try block
+next-statement: Outside of try-catch
+</pre>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+    <script src="../js/jquery-2.1.4.main.js"></script>
+    <script src="../js/bootstrap.main.js"></script>
+    <meta charset="UTF-8">
+    <meta name="veiwport" content="Width=device-width; user-scalabe=1;"/>
+</head>
+
+<body>
+<div class="container">
+    <p class="text-danger"> <em>Hello World Example</em>  </p>
+</div>
+<pre class="pre-scrollable ">
+class Example{
+   public static void main(String args[]){
+      try{
+         int arr[]=new int[7];
+         arr[4]=30/0;
+         System.out.println("Last Statement of try block");
+      }
+      catch(ArithmeticException e){
+         System.out.println("You should not divide a number by zero");
+      }
+      catch(ArrayIndexOutOfBoundsException e){
+         System.out.println("Accessing array elements outside of the limit");
+      }
+      catch(Exception e){
+         System.out.println("Some Other Exception");
+      }
+      System.out.println("Out of the try-catch block");
+   }
+}
+</pre >
+<pre class="pre-scrollable">
+OUTPUT:
+You should not divide a number by zero
+Out of the try-catch block
+</pre>
+</body>
+</html>

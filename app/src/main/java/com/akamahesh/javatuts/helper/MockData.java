@@ -45,13 +45,25 @@ public class MockData {
     }
 
     public static String[] getPatternProgrammingURIList(){
-        return new String[]{"file:///android_asset/html/Ptrn1.html",
+        return new String[]{
+                "file:///android_asset/html/Ptrn1.html",
                 "file:///android_asset/html/Ptrn2.html",
                 "file:///android_asset/html/Ptrn3.html",
                 "file:///android_asset/html/Ptrn4.html",
                 "file:///android_asset/html/Ptrn5.html",
                 "file:///android_asset/html/Ptrn6.html",
                 "file:///android_asset/html/Ptrn7.html",};
+    }
+
+    public static String[] getSortingPrograming(){
+        return new String[]{
+                "file:///android_asset/html/bubleSort.html",
+                "file:///android_asset/html/selectSort.html",
+                "file:///android_asset/html/insertionSort.html",
+                "file:///android_asset/html/quickSort.html",
+                "file:///android_asset/html/mergeSort.html",
+
+        };
     }
 
     public static String[] getArrayProgrammingList(){
@@ -115,7 +127,9 @@ public class MockData {
     }
 
     public static String[] getSortProgrammingList(){
-        return new String[]{"Implement bubble sort in java.",
+        return new String[]
+                {
+                        "Implement bubble sort in java.",
                 "Implement selection sort in java.",
                 "Implement insertion sort in java.",
                 "Implement quick sort in java." ,
@@ -129,6 +143,18 @@ public class MockData {
                 "Executing DELETE statement"
         };
     }
+
+    public  static String[] getJDBCProgramingURI(){
+        return new String[]{
+                "file:///android_asset/html/jdbcConnection.html",
+                "file:///android_asset/html/insertJdbc.html",
+                "file:///android_asset/html/selectJdbc.html",
+                "file:///android_asset/html/updateJdbc.html",
+                "file:///android_asset/html/deleteJdbc.html",
+
+
+        };
+    }
     public static String[] getExceptionHandlingProgrammingList(){
         return new String[]{"Example of Try catch in Java",
                 "Nested try catch example",
@@ -140,17 +166,32 @@ public class MockData {
                 "Catching multiple exceptions",
                 "Example of User defined exception in Java",};
     }
-    public static String[] getServletProgrammingList(){
-        return new String[]{"The init() method",
-                "The service() method :",
-                "The doGet() Method",
-                "The doPost() Method" ,
-                "The destroy() method :",
-                "Sample Code for Hello World:",
-                "POST Method Example Using Form:",
-                "Accessing a Database::",};
+    public static  String[] getExceptionHandlingProgrammingUri(){
+        return new String[]{
+                "file:///android_asset/html/tryCatch.html",
+                "file:///android_asset/html/nestedTryCatch.html",
+                "file:///android_asset/html/checkException.html",
+                "file:///android_asset/html/finallyBlock.html",
+                "file:///android_asset/html/flowControl.html",
+                "file:///android_asset/html/throwKeyWord.html",
+                "file:///android_asset/html/airthMaticException.html",
+                "file:///android_asset/html/catchingMultipleException.html",
+                "file:///android_asset/html/userDefindException.html",
+
+        };
     }
-    public static String[] getJSPProgrammingList(){
+    public static String[] getServletProgrammingList(){
+        return new String[]{"Servlets - Life Cycle",
+        "Example"};
+    }
+    public  static String[] getServletProgrammingUri(){
+        return new String[]{
+                "file:///android_asset/html/servletLifeCycle.html",
+                "file:///android_asset/html/servletExample.html",
+
+        };
+    }
+     public static String[] getJSPProgrammingList(){
         return new String[]{"JSP Scriptlet tag",
                 "JSP Implicit Objects",
                 "JSP directives",

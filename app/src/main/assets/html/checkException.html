@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+    <script src="../js/jquery-2.1.4.main.js"></script>
+    <script src="../js/bootstrap.main.js"></script>
+    <meta charset="UTF-8">
+    <meta name="veiwport" content="Width=device-width; user-scalabe=1;"/>
+</head>
+
+<body>
+<div class="container">
+    <p class="text-danger"> <em>Hello World Example</em>  </p>
+</div>
+<pre class="pre-scrollable ">
+import java.io.*;
+class Example {
+   public static void main(String args[])
+   {
+	FileInputStream fis = null;
+	/*This constructor FileInputStream(File filename)
+	 * throws FileNotFoundException which is a checked
+	 * exception
+         */
+        fis = new FileInputStream("B:/myfile.txt");
+	int k;
+
+	/* Method read() of FileInputStream class also throws
+	 * a checked exception: IOException
+         */
+	while(( k = fis.read() ) != -1)
+	{
+		System.out.print((char)k);
+	}
+
+	/*The method close() closes the file input stream
+	 * It throws IOException*/
+	fis.close();
+   }
+}
+
+
+</pre >
+<pre class="pre-scrollable">
+OUTPUT:
+Exception in thread "main" java.lang.Error: Unresolved compilation problems:
+Unhandled exception type FileNotFoundException
+Unhandled exception type IOException
+Unhandled exception type IOException
+
+</pre>
+
+</body>
+</html>

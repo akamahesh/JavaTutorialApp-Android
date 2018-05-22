@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+    <script src="../js/jquery-2.1.4.main.js"></script>
+    <script src="../js/bootstrap.main.js"></script>
+    <meta charset="UTF-8">
+    <meta name="veiwport" content="Width=device-width; user-scalabe=1;"/>
+</head>
+
+<body>
+<div class="container">
+    <p class="text-danger"> <em>Hello World Example</em>  </p>
+</div>
+<pre class="pre-scrollable ">
+class Example
+{
+   public static void main(String args[]) {
+      try{
+	 int num=121/0;
+	 System.out.println(num);
+      }
+      catch(ArithmeticException e){
+         System.out.println("Number should not be divided by zero");
+      }
+      /* Finally block will always execute
+       * even if there is no exception in try block
+       */
+      finally{
+	 System.out.println("This is finally block");
+      }
+      System.out.println("Out of try-catch-finally");
+   }
+}
+
+</pre >
+<pre class="pre-scrollable">
+OUTPUT:
+Number should not be divided by zero
+This is finally block
+Out of try-catch-finally
+</pre>
+
+</body>
+</html>

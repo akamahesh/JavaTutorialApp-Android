@@ -74,14 +74,16 @@
                 android:background="@drawable/canvas_button_bg"
                 android:onClick="onServlet"
                 android:text="Servlet" />
+<!--
 
             <Button
                 style="@style/buttonStyle"
                 android:background="@drawable/canvas_button_bg"
                 android:onClick="onJSP"
                 android:text="Jsp" />
+-->
 
-            <Button
+          <!--  <Button
                 style="@style/buttonStyle"
                 android:background="@drawable/canvas_button_bg"
                 android:onClick="onHibernate"
@@ -91,7 +93,7 @@
                 style="@style/buttonStyle"
                 android:background="@drawable/canvas_button_bg"
                 android:onClick="onStruts"
-                android:text="Struts"/>
+                android:text="Struts"/>-->
         </LinearLayout>
     </ScrollView>
 

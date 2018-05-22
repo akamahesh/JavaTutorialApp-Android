@@ -61,19 +61,19 @@ public class ProgrammingActivity extends AppCompatActivity {
     }
 
     public void onSort(View view) {
-        startActivity(SubProgrammingActivity.getIntent(this,"Sort Programs", MockData.getSortProgrammingList(),MockData.getPatternProgrammingURIList()));
+        startActivity(SubProgrammingActivity.getIntent(this,"Sort Programs", MockData.getSortProgrammingList(),MockData.getSortingPrograming()));
     }
 
     public void onJDBC(View view) {
-        startActivity(SubProgrammingActivity.getIntent(this,"JDBC Programs", MockData.getJDBCProgrammingList(),MockData.getPatternProgrammingURIList()));
+        startActivity(SubProgrammingActivity.getIntent(this,"JDBC Programs", MockData.getJDBCProgrammingList(),MockData.getJDBCProgramingURI()));
     }
 
     public void onExceptionHandling(View view) {
-        startActivity(SubProgrammingActivity.getIntent(this,"Exceptional Programs", MockData.getExceptionHandlingProgrammingList(),MockData.getPatternProgrammingURIList()));
+        startActivity(SubProgrammingActivity.getIntent(this,"Exceptional Programs", MockData.getExceptionHandlingProgrammingList(),MockData.getExceptionHandlingProgrammingUri()));
     }
 
     public void onServlet(View view) {
-        startActivity(SubProgrammingActivity.getIntent(this,"Servlet Programs", MockData.getServletProgrammingList(),MockData.getPatternProgrammingURIList()));
+        startActivity(SubProgrammingActivity.getIntent(this,"Servlet Programs", MockData.getServletProgrammingList(),MockData.getServletProgrammingUri()));
     }
 
 

@@ -19,6 +19,7 @@
             android:src="@drawable/ic_keyboard_arrow_left_white_24dp"/>
         <TextView
             android:id="@+id/tv_title"
+
             android:gravity="center"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

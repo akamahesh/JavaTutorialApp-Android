@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+    <script src="../js/jquery-2.1.4.main.js"></script>
+    <script src="../js/bootstrap.main.js"></script>
+    <meta charset="UTF-8">
+    <meta name="veiwport" content="Width=device-width; user-scalabe=1;"/>
+</head>
+
+<body>
+<div class="container">
+    <p class="text-danger"> <em>Hello World Example</em>  </p>
+</div>
+<pre class="pre-scrollable ">
+/* In this program we are checking the Student age
+ * if the student age<12 and weight <40 then our program
+ * should return that the student is not eligible for registration.
+ */
+public class ThrowExample {
+   static void checkEligibilty(int stuage, int stuweight){
+      if(stuage<12 && stuweight<40) {
+         throw new ArithmeticException("Student is not eligible for registration");
+      }
+      else {
+         System.out.println("Student Entry is Valid!!");
+      }
+   }
+
+   public static void main(String args[]){
+     System.out.println("Welcome to the Registration process!!");
+     checkEligibilty(10, 39);
+     System.out.println("Have a nice day..");
+ }
+}
+</pre >
+<pre class="pre-scrollable">
+OUTPUT:
+Welcome to the Registration process!!Exception in thread "main"
+java.lang.ArithmeticException: Student is not eligible for registration
+at beginnersbook.com.ThrowExample.checkEligibilty(ThrowExample.java:9)
+at beginnersbook.com.ThrowExample.main(ThrowExample.java:18)
+</pre>
+
+</body>
+</html>

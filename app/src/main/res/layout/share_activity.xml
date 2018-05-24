@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:id="@+id/rv_logo"
+        android:background="@color/bgColor"
+
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@drawable/logo"
+            android:layout_marginTop="30dp"
+            app:civ_border_width="2dp"
+            android:layout_marginBottom="30dp"
+            app:civ_border_color="#FF000000"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+
+        android:layout_height="wrap_content">
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:id="@+id/tv_email"
+           android:drawablePadding="10dp"
+           android:textSize="20dp"
+           android:drawableStart="@drawable/ic_action_email"
+           android:layout_height="wrap_content"
+           android:text="sidd.khan69@gmail.com"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/tv_email"
+            android:id="@+id/tv_phone_no"
+            android:textSize="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="+91-7746991395"/>
+
+
+
+    </RelativeLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
